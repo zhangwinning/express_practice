@@ -1,0 +1,19 @@
+{
+  "name": "express_practice",
+  "version": "1.0.0",
+  "description": "'express structure pratice'",
+  "main": "index.js",
+  "scripts": {
+    "test": "'test'"
+  },
+  "author": "zhangwenning",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "jade": "^1.11.0",
+    "lodash": "^4.17.4",
+    "mongodb": "^2.2.30",
+    "mongoose": "^4.2.10"
+  }
+}
