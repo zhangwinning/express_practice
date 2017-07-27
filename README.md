@@ -3,7 +3,7 @@
 这段时间一直研究express的源码,有点看不下去了,索性就写一个用express实现MVC框架
 的例子。
 
-##### MVC框架介绍:
+#### MVC框架介绍
 这里大多是摘抄的,别介意哈
 
 This pattern is great for separating the responsibility of the different parts of app and makes your code easier to maintain
@@ -12,7 +12,9 @@ This pattern is great for separating the responsibility of the different parts o
 * V is for view. A place to manage everything the end user sees on his or her screen.
 * C is for controller. A place to take user requests, bring data from the model and pass it back to the view.
 
-Model是定义数据结构和方法,并且和数据库进行交互; View是用数据渲染用户看到的视图; Controller是处理用户请求,从Model中拿到数据给到view视图。
+Model是定义数据结构和方法,并且和数据库进行交互。
+View是用数据渲染用户看到的视图。
+Controller是处理用户请求,从Model中拿到数据给到view视图。
 
 #### 不bb了,上代码喽
 
@@ -41,7 +43,7 @@ db.connect(config.db);
 
 app.listen(port, function() {
 	console.log('listen to port:' + port);
-});
+})
 
 ```
 
@@ -138,8 +140,7 @@ controller层获取数据后,调用`res.render('comments', {comments: docs});`�
 
 返回给客户端，完成整个请求。
 
-
-[链接地址](https://stackoverflow.com/questions/22954561/app-set-and-app-engine-in-express)
+[引用地址](https://stackoverflow.com/questions/22954561/app-set-and-app-engine-in-express)
 
 
 
