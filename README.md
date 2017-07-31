@@ -4,7 +4,7 @@
 的例子。
 
 #### MVC框架介绍
-这里大多是摘抄的,别介意哈
+这里英文大多是摘抄的,别介意哈
 
 This pattern is great for separating the responsibility of the different parts of app and makes your code easier to maintain
 
@@ -56,7 +56,7 @@ app.listen(port, function() {
   * 如果直接运行`node app.js`,Node 会使用 3000 端口;
   * 如果`PORT=4444 node index.js`,Node会监听4444端口
 
-* 33行告诉express我们这次把模板放到`views`目录下面
+* 33行告诉express我们这次把模板放到`views`目录下面。
 
 * 34行告诉express我们这次使用的jade模板。
 
@@ -110,7 +110,7 @@ router.get('/all', function(req, res){
 });
 
 ```
-而数据的获取怎么少得了`model`层呢,下面是`model`层的代码
+而数据的获取怎么少得了`model`层呢,下面是`model`层的代码。
 
 ```js
 var mongoose = require('mongoose');
@@ -131,9 +131,9 @@ CommentSchema.statics.userList = function(cb) {
 var Comment = module.exports = mongoose.model('comment', CommentSchema);
 
 ```
-model层定义数据结构和方法,并且把方法暴露出去,方便调用,比较简单.
+model层定义数据结构和方法,并且把方法暴露出去,方便调用,比较简单。
 
-controller层获取数据后,调用`res.render('comments', {comments: docs});`进行渲染数据
+controller层获取数据后,调用`res.render('comments', {comments: docs});`进行渲染数据。
 
 返回给客户端，完成整个请求。
 
