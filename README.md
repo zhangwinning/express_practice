@@ -59,8 +59,6 @@ app.listen(port, function() {
 
 * 33行告诉express我们这次把模板放到`views`目录下面
 
-* 34行
-
 * 35行告诉express我们这次使用的jade模板。
 
 * 37行是express托管静态文件,只要请求路径为`\public`的,就进'public'文件夹。
