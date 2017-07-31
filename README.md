@@ -31,7 +31,6 @@ var port = process.env.PORT || 3000;
 var db = require('./db');
 
 app.set('views', __dirname + '/views');
-app.engine('jade', require('jade').__express);
 app.set('view engine', 'jade');
 
 app.use('/public', express.static(__dirname + '/public'));
@@ -59,9 +58,9 @@ app.listen(port, function() {
 
 * 33行告诉express我们这次把模板放到`views`目录下面
 
-* 35行告诉express我们这次使用的jade模板。
+* 34行告诉express我们这次使用的jade模板。
 
-* 37行是express托管静态文件,只要请求路径为`\public`的,就进'public'文件夹。
+* 36行是express托管静态文件,只要请求路径为`\public`的,就进'public'文件夹。
 
 * 38,39行是把请求参数解析到`req.body`属性上。
 
@@ -138,7 +137,7 @@ controller层获取数据后,调用`res.render('comments', {comments: docs});`�
 
 返回给客户端，完成整个请求。
 
-[引用地址](https://stackoverflow.com/questions/22954561/app-set-and-app-engine-in-express)
+[app-set-and-app-engine-in-express](https://stackoverflow.com/questions/22954561/app-set-and-app-engine-in-express)
 
 
 

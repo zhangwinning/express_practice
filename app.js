@@ -8,7 +8,6 @@ var port = process.env.PORT || 3000;
 var db = require('./db');
 
 app.set('views', __dirname + '/views');
-app.engine('jade', require('jade').__express);
 app.set('view engine', 'jade');
 
 app.use('/public', express.static(__dirname + '/public'));
