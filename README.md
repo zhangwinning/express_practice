@@ -47,7 +47,7 @@ app.listen(port, function() {
 
 ```
 
-* 24行的通过require('express')获取的`express`,实际上`require('express')`是个工厂函数,用于生产应用程序。
+* 24行的通过require('express')获取的`express`,实际上`require('express')`的返回值是个工厂函数,用于生产应用程序。
 
 * 25行通过app()调用获取了一个应用程序实例(相当于new一个应用程序实例)。
 
