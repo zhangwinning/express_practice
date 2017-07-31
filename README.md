@@ -12,13 +12,13 @@ This pattern is great for separating the responsibility of the different parts o
 * V is for view. A place to manage everything the end user sees on his or her screen.
 * C is for controller. A place to take user requests, bring data from the model and pass it back to the view.
 
-Model是定义数据结构和方法,并且和数据库进行交互。
-View是用数据渲染用户看到的视图。
-Controller是处理用户请求,从Model中拿到数据给到view视图。
+Model是定义数据结构和方法,并且和数据库进行交互。<br/>
+View是用数据渲染用户看到的视图。<br/>
+Controller是处理用户请求,从Model中拿到数据给到view视图。<br/>
 
-#### 不bb了,上代码喽
+#### 不bb了,上代码
 
-app.js是应用程序的起点,以下是app.js
+app.js是应用程序的开启点,以下是app.js
 
 ```js
 var express = require('express');
@@ -47,7 +47,7 @@ app.listen(port, function() {
 
 ```
 
-* 24行的通过require('express')获取的`express`实际上是个工厂函数,用于生产应用程序。
+* 24行的通过require('express')获取的`express`,实际上`require('express')`是个工厂函数,用于生产应用程序。
 
 * 25行通过app()调用获取了一个应用程序实例(相当于new一个应用程序实例)。
 
